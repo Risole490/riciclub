@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riciclub - Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    
+</head>
+<body>
+    <header class="header-container" id="header_container">
+        <div class="headermobile-menu" id="headermobile-menu">
+            <div class="headermobile-menu__logo" id="headermobile-menu_logo">
+                <img src="/imgs/menu-icon.png" class="headermenumobile-logo" alt="Logo do menu mobile">
+            </div>
+            <div class="headermobile-menu_lista hidden" id="headermenumobile-menu_lista">
+                <ul>
+                    <li class="mobile-menu_item"><a href="#" class="mobile-menu_item_text">Home</a></li>
+                    <li class="mobile-menu_item"><a href="#" class="mobile-menu_item_text">Sobre</a></li>
+                    <li class="mobile-menu_item"><a href="#" class="mobile-menu_item_text">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-menu hidden">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <h1 class="header-title">riciclub</h1>
+
+        <div class="theme-switch-wrapper">
+            <img src="/imgs/sun.png" alt="Ícone do sol" class="headermenumobile-logo">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <img src="/imgs/moon.png" alt="Ícone da lua" class="headermenumobile-logo">
+        </div>
+    </header>
+
+    <script src="main.js"></script>
+</body>
+</html>
