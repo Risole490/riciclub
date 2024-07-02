@@ -44,7 +44,7 @@ function alteraCorDoTexto(isDarkMode) {
   const corDoTexto = isDarkMode ? '#FFF' : '#000';
 
   document.body.style.color = corDoTexto
-  document.querySelectorAll('#mobile-menu-item_text').forEach(item => {
+  document.querySelectorAll('#menu-item_text').forEach(item => {
     item.style.color = corDoTexto;
   });
 }
