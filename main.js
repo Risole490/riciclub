@@ -34,8 +34,9 @@ function atualizaTema() {
 }
 
 function alteraCorDeFundo(isDarkMode) {
-  const corDeFundo = isDarkMode ? '#000' : '#FFF';
+  const corDeFundo = isDarkMode ? '#1E1E1E' : '#FFF';
 
+  document.body.style.backgroundColor = corDeFundo;
   document.getElementById('header_container').style.backgroundColor = corDeFundo;
   document.getElementById('headermenumobile-menu_lista').style.backgroundColor = corDeFundo;
 }
