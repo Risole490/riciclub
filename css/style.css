@@ -47,16 +47,6 @@ table {
     border-spacing: 0;
 }
 
-/* CSS */
-body {
-    background-color: white;
-    color: black;
-  }
-  
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
 
 /* Tema do site toggle */
 .theme-switch-wrapper {
