@@ -36,39 +36,38 @@ function atualizaTema() {
 
 function alteraCorDeFundo(isDarkMode) {
   const corDeFundo = isDarkMode ? '#1E1E1E' : '#FFF';
-  const corDeFundoHobbies = isDarkMode ? '#1E1E1E' : '#FFF';
+  const corDeFundoSobreMim = isDarkMode ? '#1E1E1E' : '#FFF';
 
   document.body.style.backgroundColor = corDeFundo;
   document.getElementById('header_container').style.backgroundColor = corDeFundo;
   document.getElementById('headermenumobile-menu_lista').style.backgroundColor = corDeFundo;
-  document.getElementById('sobremim-container').style.backgroundColor = corDeFundoHobbies;
-  document.getElementById('hobbies-container').style.backgroundColor = corDeFundoHobbies;
+  document.getElementById('sobremim-container').style.backgroundColor = corDeFundoSobreMim;
 }
 
 function alteraCorDoTexto(isDarkMode) {
   const corDoTexto = isDarkMode ? '#FFF' : '#000';
-  const corDoTextoHobbies = isDarkMode ? '#FFF' : '#000';
-  const corDosTitulosELinhas = isDarkMode ? '#2297BF' : '#000';
+  const corDoTextoSobreMim = isDarkMode ? '#f4f3ee' : '#000';
+  const corDosTitulosELinhas = isDarkMode ? '#fbfefb' : '#000';
 
   
-  document.querySelectorAll('#menu-item_text').forEach(item => {
+  document.querySelectorAll('#contato-text').forEach(item => {
     item.style.color = corDoTexto;
   });
 
-  document.querySelectorAll('#text-hobbies').forEach(item => {
-    item.style.color = corDoTextoHobbies;
+  document.querySelectorAll('#menu-item_text').forEach(item => {
+    item.style.color = corDoTexto;
   });
 
   document.querySelectorAll('#text-body').forEach(item => {
     item.style.color = corDoTexto;
   });
 
-  document.querySelectorAll('#hrs').forEach(item => {
-    item.style.backgroundColor = corDosTitulosELinhas;
-    item.style.borderColor = corDosTitulosELinhas;
+  document.querySelectorAll('#text-sobremim').forEach(item => {
+    item.style.color = corDoTextoSobreMim;
   });
 
-  document.querySelectorAll('#project-card').forEach(item => {
+  document.querySelectorAll('#hrs').forEach(item => {
+    item.style.backgroundColor = corDosTitulosELinhas;
     item.style.borderColor = corDosTitulosELinhas;
   });
 
@@ -96,27 +95,7 @@ document.getElementById('checkbox').addEventListener('change', function() {
 if (localStorage.getItem('darkMode') === 'enabled') {
   document.getElementById('checkbox').checked = true;
   document.getElementById('header_container').classList.add('darkmode-bg');
-
 }
 
 // Atualiza o tema da página ao carregar
 atualizaTema();
-
-// Slider lógica
-var slideIndex = 1;
-mostrarSlides(slideIndex);
-
-function mudarSlide(n) {
-  mostrarSlides(slideIndex += n);
-}
-
-function mostrarSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide-container"); // Ajuste para apontar para o contêiner
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; // Esconde todos os contêineres de slides
-  }
-  slides[slideIndex-1].style.display = "block"; // Mostra o contêiner do slide atual
-}

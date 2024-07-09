@@ -66,103 +66,65 @@
     margin-right: 1rem;
 }
 
-.sobremim-title, .hobbies-title {
+.sobremim-title {
     font-size: 1.4rem;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
 
-.hr-sobremim, .hr-hobbies {
+.hr-sobremim{
     width: 80%;
     height: 1px;
     background-color: #333;
     margin: 1rem 0;
 }
 
-.sobremim-text, .hobbies-text {
+.sobremim-text {
     font-size: 0.9rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
+    line-height: 1.1rem;
 }
 
+.sobremim-link {
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    font-style: italic;
+}
 
-/* Hobbies */
-.hobbies-container {
+/* COntatos */
+
+.sobremim-contatos {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.sobremim-contato {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 1rem;
-    padding: 1.5rem;
-    border: 4px solid #333;
-    background-color: whitesmoke;
-    border-radius: 5px;
+    margin-top: 1rem;
 }
 
-/* Slider */
-.sliderfotos {
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* Ajuste conforme necessário */
-    margin: auto;
+.sobremim-contato-img {
+    width: 60%;
 }
 
-.slide {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
+.contato-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: #333;
 }
 
-.slide-container {
-    position: relative;
-    display: block; /* ou display: none; para esconder slides não ativos */
-}
-
-.descricao {
-    position: absolute;
-    bottom: 0; /* Ajuste conforme necessário */
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    color: white; /* Cor do texto */
-    font-style: italic;
-    font-weight: 500;
-    text-align: center;
-    padding: 8px; /* Ajuste conforme necessário */
-    box-sizing: border-box; /* Garante que padding não aumente a largura total */
-    border-radius: 0px 0px 10px 10px;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
 
 @media screen and (min-width: 426px) and (max-width: 1200px) {
     .welcome-title {
         font-size: 1.5rem;
     }
 
-    .welcome-text, .sobremim-text, .hobbies-text {
+    .welcome-text, .sobremim-text {
         font-size: 1.1rem;
     }
 }
@@ -179,10 +141,6 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
-    
-}
-
 @media screen and (min-width: 1201px) {
     .welcome-title {
         font-size: 1.7rem;
@@ -192,16 +150,26 @@
         font-size: 1.1rem;
     }
 
-    .sobremim-section {
-        flex-direction: row;
-    }
-
-    .sobremim-title, .hobbies-title {
+    .sobremim-title {
         font-size: 1.5rem;
     }
 
-    .sobremim-text, .hobbies-text {
+    .sobremim-text {
         font-size: 1.2rem;
+    }
+
+    .contato-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    .sobremim-section {
+        width: 60%;
+    }
+
+    .sobremim-img {
+        width: 40%;
     }
 }
 
